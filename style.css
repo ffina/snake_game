@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    /* background-image: linear-gradient(45deg, #000 25%, #000000 25%, #000000 50%, #000 50%, #000 75%, #000000 75%, #000000 100%); */
+    /* background-image: linear-gradient(45deg, #120b24 25%, #120b24 25%, #120b24 50%, #2d1172 50%, #271457 75%, #4d17d3 75%, #407bda 100%); */
+    /* background-size: 40px 40px; */
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    /*  */
+    overflow: hidden;
+
+
+    background-image: url("https://i.makeagif.com/media/8-02-2016/yYXxa_.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/* overlay for welcome and gameover */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcomeScreen {
+    background-image: url("https://i.pinimg.com/originals/74/5c/c9/745cc90fcc688569610f84bc5d2b2fd6.gif");
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.center-box {
+    background-color: rgba(0, 0, 0, 0.702);
+    padding: 30px 60px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.game-container {
+    display: flex; /* Align canvas and score box beside each other */
+    /* margin-top: 20px; Space above the game container */
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.game-content {
+    display: flex;
+    margin-top: 20px;
+}
+
+canvas {
+    background-color: #333; /* Dark background for the game canvas */
+    /* display: block;
+    margin: 0; No margin for centering */
+    border: 5px solid #fff;
+}
+
+h1.left {
+    left: 20px;
+}
+
+h1.right {
+    right: 20px;
+    transform: rotate(180deg);
+}
+
+button {
+    background-color: #1e90ff;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #1c86ee;
+}
+
+button:active {
+    background-color: #999;
+}
+
+/* Score box styles */
+#scoreBox {
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    padding: 10px 20px; /* Adjusted padding for vertical centering */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
+    /* font-family: 'Arial', sans-serif; */
+    /* font-size: 16px; Font size */
+    margin-left: 30px; /* Space between the canvas and score box */
+    text-align: center; /* Center text inside the box */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Align items in a column */
+    /* justify-content: center; Center content vertically */
+    height: 100px; /* Set a fixed height for the score box */
+}
+
+img {
+    width: 300px;
+}
+

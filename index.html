@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="welcomeScreen" class="overlay">
+        <div class="center-box">
+            <h1>Snake Game</h1>
+            <h4>Get the food as much as you can!</h4>
+            <br>
+            <p>&copy; made by</p>
+            <p>Karla Vania Widjanarko 5025231123</p>
+            <p>Sharfina Ardhiyanti Anam 5025231111</p>
+            <button onclick="startGame()">Play</button>
+        </div>
+    </div>
+    
+    <div id="gameContainer" class="game-container" style="display: none;">
+        <h1 class="left">Snake Game</h1>
+        <h1 class="right">Snake Game</h1>
+        <div class="game-content">
+            <canvas id="gameCanvas"></canvas>
+            <div id="scoreBox">
+                <p>🍎 Score: <span id="scoreText">0</span></p>
+                <p>🏆 High Score: <span id="highScoreText">0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="gameOverScreen" class="overlay" style="display: none;">
+        <div class="center-box">
+            <h1>Oops, Game Over!</h1>
+            <p>Your Score: <span id="finalScore"></span></p>
+            <p>High Score: <span id="highScore"></span></p>
+            <img src="https://www.animatedimages.org/data/media/1498/animated-sad-image-0029.gif" alt="sad gif">
+            <p>But don't worry, u can try again.</p>
+            <button onclick="restartGame()">Play Again</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
